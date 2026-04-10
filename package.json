@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "busuanzi.pure.js": "^1.0.3",
+    "medium-zoom": "^1.1.0",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15",
+    "vitepress-plugin-image-viewer": "^1.1.6"
+  }
+}

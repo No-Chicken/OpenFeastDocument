@@ -1,0 +1,6 @@
+{
+    "version": "0.1.0",
+    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Client_Setup_v0.1.0.exe",
+    "release date": "2026-04-05",
+    "release notes": "修改上位机读取数据的方式，不再固定100组，动态读取发过来的数量，以方便用户魔改协议"
+}
