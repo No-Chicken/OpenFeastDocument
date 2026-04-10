@@ -44,7 +44,6 @@ export default {
 }
 ```
 
-![](/img_test.jpg)
 
 ## Custom Containers
 
