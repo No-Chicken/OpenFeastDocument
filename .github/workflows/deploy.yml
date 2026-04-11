@@ -1,0 +1,48 @@
+
+name: Deploy documentation to Tencent Cloud
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Sync Selected Files to Server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: >-
+            -avzr
+            --prune-empty-dirs
+            --include='content/***'
+            --include='public/***'
+            --include='index.md'
+            --include='.vitepress/'
+            --include='.vitepress/config/'
+            --include='.vitepress/config/nav.ts'
+            --include='.vitepress/config/sidebar.ts'
+            --exclude='*'
+          SOURCE: './'
+          REMOTE_HOST: '114.132.159.108'
+          REMOTE_USER: 'root'
+          TARGET: '/www/wwwroot/no-chicken.com/'
+
+      - name: Build on Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: '114.132.159.108'
+          username: 'root'
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script_stop: true
+          script: |
+            cd /www/wwwroot/no-chicken.com
+            npm install
+            npm run docs:build
