@@ -36,7 +36,6 @@ jobs:
             --stats
             --partial
             --timeout=120
-            --contimeout=20
             --prune-empty-dirs
             --include='content/***'
             --include='public/***'
