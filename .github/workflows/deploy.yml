@@ -15,6 +15,16 @@ jobs:
         with:
           lfs: true
 
+      - name: Pull And Verify LFS Zip Files
+        run: |
+          git lfs pull --include="public/resources/Echo-Mate/nand_buildroot_img_260329.zip,public/resources/Echo-Mate/sd_buildroot_img_260329.zip"
+          for f in public/resources/Echo-Mate/nand_buildroot_img_260329.zip public/resources/Echo-Mate/sd_buildroot_img_260329.zip; do
+            if grep -aq "version https://git-lfs.github.com/spec/v1" "$f"; then
+              echo "ERROR: $f is still an LFS pointer, not a real zip file"
+              exit 1
+            fi
+          done
+
       - name: Sync Selected Files to Server
         uses: easingthemes/ssh-deploy@main
         env:
