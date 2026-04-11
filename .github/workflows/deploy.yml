@@ -39,7 +39,6 @@ jobs:
             --skip-compress=7z/avi/bz2/gif/gz/jpeg/jpg/m4a/m4v/mkv/mov/mp3/mp4/mpeg/mpg/pdf/png/rar/tbz/tgz/txz/wmv/xz/zip/zst
             --prune-empty-dirs
             --include='content/***'
-            # --include='public/***' # 由于 public 目录下的图片和压缩包等文件较大因此暂时注释掉该行，大文件直接传服务器，不通过action上传
             --include='index.md'
             --include='.vitepress/'
             --include='.vitepress/config/'
