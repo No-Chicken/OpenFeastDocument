@@ -31,14 +31,15 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           SSH_CMD_ARGS: '-o ServerAliveInterval=30 -o ServerAliveCountMax=6 -o ConnectTimeout=20 -o StrictHostKeyChecking=no'
           ARGS: >-
-            -avzr
+            -avr
             --info=progress2
             --stats
             --partial
             --timeout=120
+            --skip-compress=7z/avi/bz2/gif/gz/jpeg/jpg/m4a/m4v/mkv/mov/mp3/mp4/mpeg/mpg/pdf/png/rar/tbz/tgz/txz/wmv/xz/zip/zst
             --prune-empty-dirs
             --include='content/***'
-            --include='public/***'
+            # --include='public/***' # 由于 public 目录下的图片和压缩包等文件较大因此暂时注释掉该行，大文件直接传服务器，不通过action上传
             --include='index.md'
             --include='.vitepress/'
             --include='.vitepress/config/'
