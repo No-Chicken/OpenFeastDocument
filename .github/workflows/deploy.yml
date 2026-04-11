@@ -32,14 +32,14 @@ jobs:
             --exclude='*'
           SOURCE: './'
           REMOTE_HOST: '114.132.159.108'
-          REMOTE_USER: 'root'
+          REMOTE_USER: ${{ secrets.DEPLOY_USER }}
           TARGET: '/www/wwwroot/no-chicken.com/'
 
       - name: Build on Server
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: '114.132.159.108'
-          username: 'root'
+          username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script_stop: true
           script: |
