@@ -19,8 +19,14 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_CMD_ARGS: '-o ServerAliveInterval=30 -o ServerAliveCountMax=6 -o ConnectTimeout=20 -o StrictHostKeyChecking=no'
           ARGS: >-
             -avzr
+            --info=progress2
+            --stats
+            --partial
+            --timeout=120
+            --contimeout=20
             --prune-empty-dirs
             --include='content/***'
             --include='public/***'
