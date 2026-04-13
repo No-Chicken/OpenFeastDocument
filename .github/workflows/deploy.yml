@@ -59,5 +59,11 @@ jobs:
           script_stop: true
           script: |
             cd /www/wwwroot/no-chicken.com
+            if [ -d .vitepress/dist ] && [ ! -w .vitepress/dist ]; then
+              echo "ERROR: .vitepress/dist is not writable by current user."
+              echo "Run once on server as root: chown -R deploy:deploy /www/wwwroot/no-chicken.com/.vitepress"
+              exit 1
+            fi
+            rm -rf .vitepress/dist
             npm install --cache /tmp/npm-cache
             npm run docs:build
