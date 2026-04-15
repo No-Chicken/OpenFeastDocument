@@ -178,6 +178,7 @@ const FryPiSidebar = {
         { text: '软件定时器', link: '/content/FryPi/4.RTOS基础知识/6.软件定时器.md' },
         { text: '钩子函数', link: '/content/FryPi/4.RTOS基础知识/7.钩子函数.md' },
         { text: '如何调试', link: '/content/FryPi/4.RTOS基础知识/8.调试.md' },
+        { text: '其他', link: '/content/FryPi/4.RTOS基础知识/9.others.md' },
       ]
     },
     {
