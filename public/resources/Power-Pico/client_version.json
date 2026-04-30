@@ -1,6 +1,6 @@
 {
-    "version": "0.1.1",
-    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Client_Setup_v0.1.1.exe",
-    "release date": "2026-04-05",
-    "release notes": "修改ADC数据限制的bug"
+    "version": "0.1.2",
+    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Client_Setup_v0.1.2.exe",
+    "release date": "2026-04-30",
+    "release notes": "电流轴自动调节，加入负轴"
 }
