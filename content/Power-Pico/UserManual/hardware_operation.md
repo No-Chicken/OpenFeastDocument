@@ -13,6 +13,36 @@ outline: deep
     <img border="1px" width="50%" src="/images/Power-Pico/hardware_operation/3D.png">
 </p>
 
+<p align="center"><strong>量程说明</strong></p>
+
+<table align="center">
+    <thead>
+        <tr>
+            <th>档位</th>
+            <th>测量范围</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>低档位</td>
+            <td>0 - 500uA</td>
+        </tr>
+        <tr>
+            <td>中档位</td>
+            <td>500uA - 50mA</td>
+        </tr>
+        <tr>
+            <td>高档位</td>
+            <td>50mA - 5A</td>
+        </tr>
+        <tr>
+            <td>电压范围</td>
+            <td>0 - 20V</td>
+        </tr>
+    </tbody>
+</table>
+
+
 ## 1. 按键说明
 
 :::warning 提示
