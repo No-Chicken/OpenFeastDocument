@@ -17,6 +17,14 @@ outline: deep
 
 <center><b>请多多关注我的B站账号和开源哦~给个关注支持一下吧~</b></center>
 
+### ⚡️便携CC表 Power-Pico
+
+这里有优雅的便携uA级别功耗计：[Power-Pico](/content/Power-Pico/intro.md)
+
+<p align="center">
+    <img border="0px" width="100%" src="/images/Power-Pico/intro2316_1.png">
+</p>
+
 ### 🤖AI桌面机器人Echo-Mate
 
 这里有基于RV1106的全开源AI桌面机器人：[Echo-Mate](/content/Echo-Mate/intro.md)

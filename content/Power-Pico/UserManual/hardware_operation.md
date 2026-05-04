@@ -9,10 +9,6 @@ outline: deep
 进行PD诱骗时，别连接任何贵重设备，当心烧坏！PPS诱骗出来是充当一个可调电压源的角色！
 :::
 
-<p align="center">
-    <img border="1px" width="50%" src="/images/Power-Pico/hardware_operation/3D.png">
-</p>
-
 <p align="center"><strong>量程说明</strong></p>
 
 <table align="center">
