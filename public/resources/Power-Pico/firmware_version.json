@@ -1,6 +1,6 @@
 {
-    "version": "1.1.2",
-    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Firmware_v1.1.2.bin",
-    "release date": "2026-05-02",
-    "release notes": "修改LCD刷新方式为异步"
+    "version": "1.1.3",
+    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Firmware_v1.1.3.bin",
+    "release date": "2026-05-08",
+    "release notes": "修复卡机bug,增加栈空间"
 }

@@ -17,7 +17,7 @@ outline: deep
 
 📥︎[PowerPico BootLoader](/resources/Power-Pico/PowerPico_BootLoader.zip)
 
-📥︎[PowerPico bin固件 v1.1.2](/resources/Power-Pico/PowerPico_Firmware_v1.1.2.bin)
+📥︎[PowerPico bin固件 v1.1.3](/resources/Power-Pico/PowerPico_Firmware_v1.1.3.bin)
 
 📥︎[PowerPico Client 电脑客户端 v0.1.2](/resources/Power-Pico/PowerPico_Client_Setup_v0.1.2.exe)
 
