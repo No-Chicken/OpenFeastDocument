@@ -19,7 +19,7 @@ outline: deep
 
 📥︎[PowerPico bin固件 v1.1.4](/resources/Power-Pico/PowerPico_Firmware_v1.1.4.bin)
 
-📥︎[PowerPico Client 电脑客户端 v0.1.2](/resources/Power-Pico/PowerPico_Client_Setup_v0.1.2.exe)
+📥︎[PowerPico Client 电脑客户端 v0.1.3](/resources/Power-Pico/PowerPico_Client_Setup_v0.1.3.exe)
 
 `BootLoader.hex`是使用 SWD 例如 ST-LINK 烧录到 STM32 中的, 这是启动程序。
 
