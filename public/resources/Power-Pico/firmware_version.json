@@ -1,6 +1,6 @@
 {
     "version": "1.1.5",
     "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Firmware_v1.1.5.bin",
-    "release date": "2026-06-26",
+    "release date": "2026-07-07",
     "release notes": "增加栈空间，修复overflow"
 }
