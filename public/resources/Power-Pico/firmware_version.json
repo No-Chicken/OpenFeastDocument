@@ -1,6 +1,6 @@
 {
-    "version": "1.1.4",
-    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Firmware_v1.1.4.bin",
+    "version": "1.1.5",
+    "url": "https://no-chicken.com/resources/Power-Pico/PowerPico_Firmware_v1.1.5.bin",
     "release date": "2026-06-26",
-    "release notes": "加入PD Fixed mode, 目前支持PPS步进可调和PD固定档位"
+    "release notes": "增加栈空间，修复overflow"
 }
